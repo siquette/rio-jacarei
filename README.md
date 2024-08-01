@@ -24,7 +24,7 @@ warnings.filterwarnings('ignore')
 grid = Grid.from_raster('data/n30w100_con', data_name='dem')
 ```
 
-## Preprocess
+
 
 É importante usar um DEM sem ***depressões*** ou ***sumidouros***. Um sumidouro é uma célula que não tem um valor de drenagem associado. Os valores de drenagem indicam a direção em que a água fluirá para fora da célula e são atribuídos durante o processo de criação de uma grade de direção de fluxo para a paisagem. A rede de drenagem resultante depende de encontrar o "caminho de fluxo" de cada célula na grade, portanto, é importante que a etapa de preenchimento seja realizada antes de criar uma grade de direção de fluxo.
 
